@@ -1,0 +1,22 @@
+{
+  "customerAddress": "+4917672899431",
+  "flexChannelInviteSid": "KGb7dcc4bfb85953c8d97f204e0ded942b",
+  "conversationSid": "CH40858e09fc8f427d96ed32cd1e63cdc9",
+  "channelType": "sms",
+  "conversations": {
+    "initiated_by": "Customer",
+    "conversation_id": "KD9cbb58773e1500fe2fe656d99228d8e1",
+    "media": [{ "type": "ChatTranscript", "sid": "CH40858e09fc8f427d96ed32cd1e63cdc9" }],
+    "external_contact": "+447723918872",
+    "focus_time": 19.019,
+    "undefined": ">"
+  },
+  "customerName": "+4917672899431",
+  "flexInteractionSid": "KD9cbb58773e1500fe2fe656d99228d8e1",
+  "name": "Test 123",
+  "from": "+4917672899431",
+  "customers": { "phone": "+4917672899431", "name": "+4917672899431" },
+  "flexInteractionChannelSid": "UOf682fc8dbe5c427fc427156e698e960f",
+  "initiatedBy": "customer",
+  "direction": "inbound"
+}

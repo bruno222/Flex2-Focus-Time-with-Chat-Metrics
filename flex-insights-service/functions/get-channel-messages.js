@@ -26,20 +26,29 @@ exports.handler = async function (context, event, callback) {
       response.setBody("<h1>ssoToken is invalid</h1>");
       return callback(null, response);
     }
+    console.log('blabla' , event.workerName);
 
+    console.log('blabla2' , event.reservationAccepted);
+
+    console.log('blabla3' , event.conversationSid);
+
+    console.log('blabla4' , event.configuredFeatures);
+
+    console.log('blabla5' , context.TWILIO_CHAT_SERVICE);
     const workerName = event.workerName
     const dateAccepted = event.reservationAccepted
-    const channelSid = event.channelSid
+    const conversationSid = event.conversationSid
     const configuredFeatures = event.configuredFeatures
     const chatService = context.TWILIO_CHAT_SERVICE;
 
     response.body = {}
 
     client.chat.services(chatService)
-      .channels(channelSid)
+      .channels(conversationSid)
       .messages
       .list()
       .then(messages => {
+        console.log('messages here', messages);
         // agent first reply
         if (configuredFeatures['firstAgentResponse']) {
           const agentFirstResponse = messages.find(m => m.from === workerName);
